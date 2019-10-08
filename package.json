@@ -1,0 +1,47 @@
+{
+  "name": "graphql-server-boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "tslint -p tsconfig.json",
+    "start": "nodemon",
+    "clean": "rimraf dist",
+    "test": "mocha -r ts-node/register src/__test__/**/*.ts",
+    "build": "yarn run clean && tsc --build"
+  },
+  "author": {
+    "name": "HANSUK KIM",
+    "email": "hansuk.kim@navercorp.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.2",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/errorhandler": "^0.0.32",
+    "@types/lodash": "^4.14.138",
+    "@types/mocha": "^5.2.7",
+    "@types/mongoose": "^5.5.17",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "mongodb-memory-server": "^5.2.5",
+    "nodemon": "^1.19.2",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@godaddy/terminus": "^4.2.0",
+    "apollo-server-express": "^2.9.3",
+    "cookie-parser": "^1.4.4",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "graphql-dataloader-mongoose": "^1.0.0",
+    "mongoose": "^5.7.1",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.1.0"
+  }
+}
